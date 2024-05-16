@@ -1,10 +1,10 @@
 import React from 'react'
-import NavbarItems from './navbar-items';
 import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Separator } from '@/components/ui/separator';
-import ContactUsBtn from './contact-us-btn';
+import ColoredBtn from '@/components/colored-btn';
+import NavbarMobileItems from './mobile-nav-items';
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
@@ -38,7 +38,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, onMenuClose }) => {
         <div className='w-full flex flex-col items-start gap-3'>
           {
             routes.map((item, index) => (
-                <NavbarItems key={index} href={item.href} label={item.label} variant='link' textSize='text-2xl' />
+                <NavbarMobileItems key={index} href={item.href} label={item.label} variant='link' textSize='text-2xl' onClose={onMenuClose} />
             ))
           }
           <Accordion type='single' collapsible className='w-full -mt-2 px-4'>
@@ -46,9 +46,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, onMenuClose }) => {
               <AccordionTrigger className='text-2xl'>Company</AccordionTrigger>
               <AccordionContent>
                 <div className='flex flex-col items-start justify-start'>
-                  <NavbarItems href='/about' label='About Us' variant='ghost' textSize='text-lg' />
+                  <NavbarMobileItems href='/about' label='About Us' variant='ghost' textSize='text-lg' onClose={onMenuClose}/>
                   <Separator />
-                  <NavbarItems href='/teams' label='Teams' variant='ghost' textSize='text-lg' />
+                  <NavbarMobileItems href='/teams' label='Teams' variant='ghost' textSize='text-lg' onClose={onMenuClose}/>
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -56,7 +56,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, onMenuClose }) => {
         </div>
       </div>
       <div className='w-full mt-24'>
-        <ContactUsBtn width='w-full' textSize='text-2xl' height='h-20' />
+        <ColoredBtn 
+              className='w-full text-lg h-20 bg-[#6B78E5] text-white hover:bg-[#40DDB6] font-normal rounded-none'
+              text='Contact Us' 
+              href='/contact'
+          />
       </div>
     </div>
   )
