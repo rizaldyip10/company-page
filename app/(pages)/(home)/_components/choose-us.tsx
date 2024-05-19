@@ -11,7 +11,6 @@ const ChooseUs = () => {
     return (
         <div className='w-full flex mt-32 bg-[#37393F]'>
             <AnimationWrapper classname='w-full flex'>
-
                 <div className='flex flex-col w-full lg:w-3/5 text-white px-10 py-32 items-center lg:px-20 lg:items-end'>
                     <div className='flex flex-col'>
                         <div className='flex gap-1 items-center mb-3'>

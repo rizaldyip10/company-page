@@ -62,9 +62,6 @@ const CompanyTimeline = () => {
                     </div>
                 </li>
             </ol>
-
-
-
         </div>
     )
 }
