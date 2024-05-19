@@ -3,6 +3,7 @@ import React from 'react'
 import client1 from '@/imgs/client1.png'
 import client2 from '@/imgs/client2.jpg'
 import TestimonialCard from './testimonial-card'
+import AnimationWrapper from './animation'
 
 const userReviews = [
     {
@@ -37,7 +38,9 @@ const Testimonial = () => {
                 <div className='flex flex-col lg:flex-row gap-9'>
                     {
                         userReviews.map((review, index) => (
-                            <TestimonialCard key={index} user={review.user} reviews={review.review} rating={review.rating} />
+                            <AnimationWrapper key={index} transition={{ duration: 0.5, delay: index * .1}}>
+                                <TestimonialCard user={review.user} reviews={review.review} rating={review.rating} />
+                            </AnimationWrapper>
                         ))
                     }
                 </div>

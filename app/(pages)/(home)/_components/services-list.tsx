@@ -4,6 +4,7 @@ import ServicesCard from '@/components/service-card'
 import { Poppins } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import ColoredBtn from '@/components/colored-btn'
+import AnimationWrapper from '@/components/animation'
 
 const poppins = Poppins({
     weight: '700',
@@ -53,14 +54,18 @@ const ServicesList: React.FC = () => {
                 <div className='w-full md:max-w-[1220px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
                     {
                         service.map((item, index) => (
-                            <ServicesCard label={item.label} href={item.href} icon={item.icon} key={index} />
+                            <AnimationWrapper key={index} transition={{ duration: 1, delay: index * .1 }}>
+                                <ServicesCard label={item.label} href={item.href} icon={item.icon} key={index} />
+                            </AnimationWrapper>
                         ))
                     }
-                    <ColoredBtn 
-                        text='More Services'
-                        href='/'
-                        className='w-full min-h-[173px] bg-[#6B77E5] text-white text-center rounded-none hover:bg-[#40DDB6]'
-                    />
+                    <AnimationWrapper transition={{ duration: 1, delay: 0.6}}>
+                        <ColoredBtn 
+                            text='More Services'
+                            href='/services'
+                            className='w-full min-h-[173px] bg-[#6B77E5] text-white text-center rounded-none text-3xl hover:bg-[#40DDB6]'
+                        />
+                    </AnimationWrapper>
                 </div>
             </div>
         </div>

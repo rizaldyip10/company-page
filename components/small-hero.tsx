@@ -19,7 +19,7 @@ const HeroSmall: React.FC<HeroSmallProps> = ({ pageName, img, title, content }) 
                         <Square className='w-3 h-3 text-[#40DDB6] bg-[#40DDB6]' />
                         <h2 className='text-white text-lg font-semibold'>{ pageName }</h2>
                     </div>
-                    <h1 className='font-bold text-[46px] text-white capitalize'>{ title }</h1>
+                    <h1 className='font-bold text-3xl text-white capitalize'>{ title }</h1>
                     <p className='text-sm font-medium text-[#B9B9B9]'>{ content }</p>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const contact = [
 
 const ContactDetail = () => {
     return (
-        <div className='w-full pt-36 flex justify-center items-center max-xl:px-10 mb-12'>
+        <div className='w-full pt-36 flex justify-center items-center max-xl:px-5 mb-12'>
             <div className='flex flex-col lg:flex-row max-w-[1220px] h-full gap-12'>
                 <Image alt='contact' src={contactImg} width={585} height={454}  />
                 <div className='flex flex-col gap-8'>
