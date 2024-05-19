@@ -30,7 +30,7 @@ const WorkProcess = () => {
                         <SectionTitle title='Work Process' />
                         <h1 className='font-bold text-4xl'>How We Work</h1>
                     </div>
-                    <div className='flex justify-center gap-8 flex-wrap'>
+                    <div className='grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3 px-5'>
                         {
                             process.map((item, index) => (
                                 <WorkCard key={index} icon={item.icon} title={item.title} content={item.content} />
