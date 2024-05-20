@@ -21,9 +21,9 @@ const CompanyTimeline = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            <h1 className="text-lg font-semibold text-gray-900 dark:text-white">
                                 Whitecollar Established
-                            </h3>
+                            </h1>
                             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                                 Launched core services in financial consulting, strategic planning, and market analysis.
@@ -40,9 +40,9 @@ const CompanyTimeline = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            <h1 className="text-lg font-semibold text-gray-900 dark:text-white">
                                 IT Transformation
-                            </h3>
+                            </h1>
                             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                                 Introduced digital transformation and IT consulting services.
@@ -59,9 +59,9 @@ const CompanyTimeline = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            <h1 className="text-lg font-semibold text-gray-900 dark:text-white">
                                 Major Milestone
-                            </h3>
+                            </h1>
                             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                                 Received industry award for excellence in business consulting.

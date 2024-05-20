@@ -20,7 +20,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ user, reviews, rating
             <div className='flex gap-4'>
                 <Image src={user.img} alt={user.name} className='w-24 h-24 rounded-full' />
                 <div className='flex flex-col gap-1'>
-                    <h3 className='text-xl font-semibold'>{ user.name }</h3>
+                    <h1 className='text-xl font-semibold'>{ user.name }</h1>
                     <p className='text-base text-[#7D7D7D]'>{ user.job }</p>
                     <RatingStars rating={rating} />
                 </div>

@@ -19,12 +19,12 @@ const CompanyDetail: React.FC = () => {
         <div className='w-full flex flex-col lg:flex-row'>
             <div className='w-full items-center md:gap-8 md:justify-center lg:w-[41.5%] flex flex-col md:flex-row lg:flex-col gap-2 lg:items-end bg-[#F4F4F4] py-36 lg:px-12'>
                 <AnimationWrapper classname='w-full items-center md:gap-8 md:justify-center flex flex-col md:flex-row lg:flex-col gap-2 lg:items-end'>
-                    <Image alt='company-about' src={companyAboutImg} className='object-fit h-80 w-80 lg:w-[408px] lg:h-[446px]'/>
+                    <Image alt='company-about' src={companyAboutImg} className='object-cover h-80 w-80 lg:w-[408px] lg:h-[446px]'/>
                     <div className='max-w-80 md:max-w-[408px]'>
                         <div className='text-3xl max-w-[408px] mt-5'>
-                            <h3 className={poppins.className + ' text-wrap font-semibold'}>
+                            <h1 className={poppins.className + ' text-wrap font-semibold'}>
                                 We&apos;re Ready To Grow Your Business With Us
-                            </h3>
+                            </h1>
                         </div>
                         <div className='max-w-[408px] mt-3'>
                             <p className='text-lg text-[#7D7D7D]'>

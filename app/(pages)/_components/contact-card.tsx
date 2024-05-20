@@ -14,7 +14,7 @@ const ContactCardFooter: React.FC<ContactCardFooterProps> = ({ icon: Icon, title
                 <Icon className='h-6 w-6 text-[#40DDB6]' />
             </div>
             <div className='flex flex-col gap-1'>
-                <h3 className='text-xl font-semibold'>{ title }</h3>
+                <h1 className='text-xl font-semibold'>{ title }</h1>
                 <p className='text-lg'>{ content }</p>
             </div>
         </div>

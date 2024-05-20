@@ -15,7 +15,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ label, address, icon, color, 
         <div className={`max-w-[360px] flex items-center ${gap}`}>
             <CircularIcon icon={icon} iconStyle={`h-6 w-6 text-[${color}]`} containerStyle='h-16 w-16 rounded-full bg-[#F4F4F4]' />
             <div className='flex flex-col'>
-                <h3 className='text-base text-[#7D7D7D]'>{ label }</h3>
+                <h1 className='text-base text-[#7D7D7D]'>{ label }</h1>
                 <p className='text-lg text-[#37393F]'>{ address }</p>
             </div>
         </div>

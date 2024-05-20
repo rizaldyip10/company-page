@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ title, desc, icon: Icon }) => {
                 <Icon className='w-10 h-10 text-[#40DDB6]' />
             </div>
             <div className='flex flex-col h-full'>
-                <h3 className='font-semibold text-xl text-[#37393F]'>{ title }</h3>
+                <h1 className='font-semibold text-xl text-[#37393F]'>{ title }</h1>
                 <p className='text-base text=[#7D7D7D]'>{ desc }</p>
             </div>
         </div>

@@ -17,7 +17,7 @@ const ChooseCard: React.FC<ChooseCardProps> = ({ title, subtitle, percentage, wi
             </div>
             <div className='flex flex-col'>
                 <p className='text-base'>{ title }</p>
-                <h3 className='text-lg font-semibold'>{ subtitle }</h3>
+                <h1 className='text-lg font-semibold'>{ subtitle }</h1>
             </div>
         </div>
     )
