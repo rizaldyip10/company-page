@@ -7,7 +7,7 @@ import AnimationWrapper from '@/components/animation'
 const TeamSection = () => {
     return (
         <AnimationWrapper classname='relative w-full flex justify-center items-center pb-10'>
-            <ColoredBtn href='/team' text='Meet Our Team' className=' w-60 h-20 lg:w-[601px] lg:h-[222px] bg-[#37393F] opacity-80 rounded-none absolute' textStyle='text-xl lg:text-4xl font-bold' />
+            <ColoredBtn href='/teams' text='Meet Our Team' className=' w-60 h-20 lg:w-[601px] lg:h-[222px] bg-[#37393F] opacity-80 rounded-none absolute' textStyle='text-xl lg:text-4xl font-bold' />
             <Image alt='team' src={teamImg} />
         </AnimationWrapper>
     )

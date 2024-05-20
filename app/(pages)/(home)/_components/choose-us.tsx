@@ -49,7 +49,7 @@ const ChooseUs = () => {
                     </div>
                 </div>
                 <div className='hidden lg:flex lg:w-2/5'>
-                    <Image alt='photo' src={chooseImg} className='object-cover' />
+                    <Image alt='photo' src={chooseImg} className='object-cover w-full' />
                 </div>
             </AnimationWrapper>
         </div>

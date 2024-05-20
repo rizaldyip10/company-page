@@ -13,7 +13,7 @@ interface HeroSmallProps {
 
 const HeroSmall: React.FC<HeroSmallProps> = ({ pageName, img, title, content }) => {
     return (
-        <div className='h-max relative'>
+        <div className='h-max relative w-full'>
             <div className='absolute h-[50vh] lg:h-full left-0 w-full justify-center lg:w-[41.5%] flex items-center px-10 lg:px-32 bg-[#37393F] opacity-90'>
                 <AnimationWrapper classname='w-full'>
                     <div className='flex flex-col'>
@@ -26,7 +26,7 @@ const HeroSmall: React.FC<HeroSmallProps> = ({ pageName, img, title, content }) 
                     </div>
                 </AnimationWrapper>
             </div>
-            <Image alt={pageName} src={img} className=' object-cover h-[50vh]' />
+            <Image alt={pageName} src={img} className=' object-cover h-[50vh] w-full' />
         </div>
     )
 }

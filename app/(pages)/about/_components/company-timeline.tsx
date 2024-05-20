@@ -6,7 +6,7 @@ import React from 'react'
 
 const CompanyTimeline = () => {
     return (
-        <div className='w-full flex flex-col gap-20 justify-center px-7 lg:px-24 py-28'>
+        <div className='w-full flex flex-col gap-20 justify-center items-center px-7 lg:px-24 py-28'>
             <div className='w-full flex flex-col items-center text-center gap-2'>
                 <SectionTitle title='Company Timeline' />
                 <h1 className='font-bold text-4xl max-w-[600px]'>See Through Our Journey From the Start</h1>

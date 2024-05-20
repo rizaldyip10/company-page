@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 const Hero: React.FC = () => {
     return (
-        <div className='h-screen relative'>
+        <div className='h-screen w-full relative'>
             <div className='h-full flex flex-col items-start justify-center w-full lg:w-[41.5%] bg-[#37393F] opacity-90 absolute'>
                 <AnimationWrapper
                     classname='lg:py-56 px-12 xl:px-28 flex flex-col items-start justify-center w-full'
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
                     </div>
                 </AnimationWrapper>
             </div>
-            <Image src={heroImg} alt='hero-image' className='object-cover h-screen' />
+            <Image src={heroImg} alt='hero-image' className='object-cover w-full h-screen' />
         </div>
     )
 }
