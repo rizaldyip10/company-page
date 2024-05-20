@@ -46,7 +46,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
           ))
         }
       </div>
-      <Image alt='member' src={profile.photoURL} width={300} height={400} className='w-[300px] h-[400px] xl:w-96 xl:h-[532px]' quality={100} />
+      <Image alt='member' src={profile.photoURL} width={300} height={400} className='w-[300px] h-[400px] xl:w-96 xl:h-[532px] object-cover' quality={100} priority/>
     </div>
   )
 }

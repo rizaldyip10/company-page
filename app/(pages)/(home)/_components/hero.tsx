@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
                     </div>
                 </AnimationWrapper>
             </div>
-            <Image src={heroImg} alt='hero-image' className='object-cover w-full h-screen' />
+            <Image src={heroImg} alt='hero-image' priority className='object-cover w-full h-screen' />
         </div>
     )
 }

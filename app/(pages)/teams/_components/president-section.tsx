@@ -12,7 +12,7 @@ const PresidentSection = () => {
                 <h1 className='font-semibold text-4xl'>A Word From Our CEO</h1>
             </div>
             <div className='w-full flex flex-col lg:flex-row gap-10 items-center lg:items-start'>
-                <Image alt='president' src={presidentImage} className='w-[300px] h-[400px] md:w-[400px] md:h-[600px] object-cover' />
+                <Image alt='president' src={presidentImage} priority className='w-[300px] h-[400px] md:w-[400px] md:h-[600px] object-cover' />
                 <div className='w-full flex flex-col gap-5'>
                     <div className='border-l-8 border-[#40DDB6] px-6 py-6 bg-[#F4F4F4]'>
                         <p className='font-semibold text-2xl text-wrap leading-10'>&quot;At Whitecollar Solution, our best feature is our global team of highly professional and knowledgeable individuals, who, through their hard work, passion, dedication and perceptiveness, continuously drive our firm forward.&quot;</p>

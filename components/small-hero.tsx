@@ -26,7 +26,7 @@ const HeroSmall: React.FC<HeroSmallProps> = ({ pageName, img, title, content }) 
                     </div>
                 </AnimationWrapper>
             </div>
-            <Image alt={pageName} src={img} className=' object-cover h-[50vh] w-full' />
+            <Image alt={pageName} src={img} priority className='object-cover h-[50vh] w-full' />
         </div>
     )
 }
