@@ -27,7 +27,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ label, href, icon: Icon }) 
                 </div>
             </div>
             <Link href={href}>
-                <p className='text-lg font-semibold text-[#6B77E5]'>Read More</p>
+                <p className='text-lg font-semibold text-[#6B77E5]'>See Detail</p>
             </Link>
         </div>
     )
