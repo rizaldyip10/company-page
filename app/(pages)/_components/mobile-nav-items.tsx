@@ -17,7 +17,7 @@ const NavbarMobileItems: React.FC<NavbarMobileItemsProps> = ({ href, label, vari
         router.push(href)
         setTimeout(() => {
           onClose()
-        }, 300)
+        }, 150)
     };
 
   return (

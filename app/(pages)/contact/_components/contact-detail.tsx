@@ -4,6 +4,7 @@ import Image from 'next/image'
 import SectionTitle from '@/components/section-title'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import ContactCard from '@/components/contact-card'
+import AnimationWrapper from '@/components/animation'
 
 const contact = [
     {
@@ -26,7 +27,7 @@ const contact = [
 const ContactDetail = () => {
     return (
         <div className='w-full pt-36 flex justify-center items-center max-xl:px-5 mb-12'>
-            <div className='flex flex-col lg:flex-row max-w-[1220px] h-full gap-12'>
+            <AnimationWrapper classname='flex flex-col lg:flex-row max-w-[1220px] h-full gap-12'>
                 <Image alt='contact' src={contactImg} width={585} height={454}  />
                 <div className='flex flex-col gap-8'>
                     <div className='flex flex-col gap-4'>
@@ -44,7 +45,7 @@ const ContactDetail = () => {
                         }
                     </div>
                 </div>
-            </div>
+            </AnimationWrapper>
         </div>
     )
 }

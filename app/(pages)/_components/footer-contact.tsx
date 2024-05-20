@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './logo'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import ContactCardFooter from './contact-card'
+import Link from 'next/link'
 
 const contact = [
     {
@@ -24,12 +25,15 @@ const contact = [
 const FooterContact = () => {
     return (
         <div className='w-full flex flex-col md:flex-row gap-10 md:gap-44 pb-11 border-b border-[#6C6D72]'>
-            <div className='flex items-center gap-2 cursor-pointer'>
+            <Link href='/' className='flex items-center gap-2 cursor-pointer'>
                 <Logo />
-                <h1 className='text-2xl font-bold text-white'>
-                    WhiteCo<span className='text-[#6B78E5]'>ll</span>ar
-                </h1>
-            </div>
+                <div>
+                    <h1 className='text-2xl font-bold text-white'>
+                        WhiteCo<span className='text-[#6B78E5]'>ll</span>ar
+                    </h1>
+                    <h1 className='text-sm italic font-bold text-[#6B77E5]'>#EmpoweringBusinessSuccess</h1>
+                </div>
+            </Link>
             <div className='flex flex-wrap gap-14 items-start md:items-center text-white'>
                 {
                     contact.map((item, index) => (

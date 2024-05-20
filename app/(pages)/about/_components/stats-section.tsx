@@ -1,6 +1,7 @@
 import { BriefcaseBusiness, FileCode, Handshake, Users2 } from 'lucide-react'
 import React from 'react'
 import StatsCard from './stats-card'
+import AnimationWrapper from '@/components/animation'
 
 const stats = [
     {
@@ -35,7 +36,9 @@ const StatsSection = () => {
             <div className='flex justify-center items-center flex-wrap gap-10'>
                 {
                     stats.map((item, index) => (
-                        <StatsCard icon={item.icon} title={item.title} stats={item.stats} content={item.content} key={index} />
+                        <AnimationWrapper key={index} transition={{ duration: 1, delay: index * .1}}>
+                            <StatsCard icon={item.icon} title={item.title} stats={item.stats} content={item.content} />
+                        </AnimationWrapper>
                     ))
                 }
             </div>

@@ -3,6 +3,7 @@ import HeroSmall from '@/components/small-hero'
 import contactImg from '@/imgs/contact.webp'
 import ContactDetail from './_components/contact-detail'
 import ContactUsSection from './_components/contact-us-section'
+import useFetchTeams from '@/hooks/useFetchTeams'
 
 const ContactPage = () => {
     return (

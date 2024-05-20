@@ -64,10 +64,11 @@ const CompanyDetail: React.FC = () => {
                         <Card title='Awards Winner' desc='Leverage frameworks toprovidee werment.' icon={Award} />
                     </div>
                     <div className='mt-9 mb-10'>
+                        <h1 className='text-xl italic font-bold text-[#6B77E5]'>#EmpoweringBusinessSuccess</h1>
                         <ColoredBtn 
                             href='/about'
                             text='More About Us' 
-                            className='h-16 w-44 bg-[#6B77E5] hover:bg-[#40DDB6] text-white font-semibold text-base rounded-none'
+                            className='h-16 w-44 bg-[#6B77E5] hover:bg-[#40DDB6] text-white font-semibold text-base rounded-none mt-5'
                         />
                     </div>
                 </AnimationWrapper>

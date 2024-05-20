@@ -6,6 +6,7 @@ import Image from 'next/image'
 import CompanyBenefit from '../_components/company-benefit'
 import SideMenu from '../_components/side-menu'
 import FileDownload from '../_components/file-download'
+import AnimationWrapper from '@/components/animation'
 
 const ServiceDetailPage = ({ params }: { params: { servicesDetail: string } }) => {
   const serviceName = params.servicesDetail.split("-").join(" ");
@@ -13,7 +14,7 @@ const ServiceDetailPage = ({ params }: { params: { servicesDetail: string } }) =
     <div className='h-full'>
       <HeroSmall title={serviceName} img={serviceDetailImg} pageName='About the Service' />
       <div className='w-full flex flex-col md:flex-row-reverse py-32 px-10 lg:px-64 gap-12'>
-        <div className='flex flex-col gap-10 w-full md:w-3/5'>
+        <AnimationWrapper classname='flex flex-col gap-10 w-full md:w-3/5'>
           <Image alt='hero' src={serviceHeroImg} />
           <div className='w-full flex flex-col gap-1'>
             <h1 className='capitalize text-2xl font-semibold'>Why Us For International {serviceName} Consulting!</h1>
@@ -26,7 +27,7 @@ const ServiceDetailPage = ({ params }: { params: { servicesDetail: string } }) =
           <div className='w-full'>
             <CompanyBenefit />
           </div>
-        </div>
+        </AnimationWrapper>
         <div className='flex flex-col gap-12 w-full md:w-2/5'>
           <SideMenu />
           <FileDownload />

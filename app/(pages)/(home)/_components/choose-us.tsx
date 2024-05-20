@@ -41,7 +41,7 @@ const ChooseUs = () => {
                             </div>
                             <div className='flex flex-col gap-6'>
                                 <CheckList bgColor='#40DDB6' checkColor='#37393F' p='106+' textStyle='text-xl font-bold' />
-                                <Link href='/'>
+                                <Link href='/contact'>
                                     <p className='text-lg font-semibold text-[#40DDB6] underline'>Get In Touch</p>
                                 </Link>
                             </div>
