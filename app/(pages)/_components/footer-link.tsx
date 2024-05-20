@@ -20,7 +20,7 @@ const links = [
             },
             {
                 label: 'Our Team',
-                href: '/team'
+                href: '/teams'
             },
             {
                 label: 'About Us',
@@ -32,24 +32,24 @@ const links = [
         title: 'Our Services',
         children: [
             {
-                label: 'Financial Consulting',
-                href: '/'
+                label: 'Financial Consultancy',
+                href: '/services/financial-consultancy'
             },
             {
                 label: 'Business Management',
-                href: '/'
+                href: '/services/bussiness-management'
             },
             {
-                label: 'Consultant & Program',
-                href: '/'
+                label: 'Consultant Program',
+                href: '/services/consultant-program'
             },
             {
                 label: 'Company Management',
-                href: '/'
+                href: '/services/company-management'
             },
             {
-                label: 'Insurance & Finance',
-                href: '/'
+                label: 'Financial & Insurance Jobs',
+                href: '/services/financial-and-insurance-jobs'
             },
         ]
     }
