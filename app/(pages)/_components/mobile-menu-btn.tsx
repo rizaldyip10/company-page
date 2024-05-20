@@ -18,7 +18,7 @@ const MobileMenuBtn = () => {
 
     return (
         <>
-            <Button variant='ghost' onClick={onMenuOpen} className='absolute right-0 mr-3 lg:hidden'>
+            <Button variant='ghost' role='mobile-menu' onClick={onMenuOpen} className='absolute right-0 mr-3 lg:hidden'>
                 <Menu />
             </Button>
 
