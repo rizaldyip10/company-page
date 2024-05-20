@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import presidentImage from "@/imgs/president2.jpg"
+import presidentImage from "@/imgs/president1.webp"
 import SectionTitle from '@/components/section-title'
 
 const PresidentSection = () => {
