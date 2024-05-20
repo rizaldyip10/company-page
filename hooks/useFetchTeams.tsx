@@ -12,12 +12,12 @@ const useFetchTeams = () => {
         const fetchTeams = async () => {
             setLoading(true);
             try {
-                const result = await axios.get('employeeDetail');
+                const result = await axios.get('');
                 if (result.status !== 200) {
                     throw new Error("Failed to fetch data");
                 }
                 
-                setTeamList(result.data);
+                setTeamList(result.data.dataList);
             } catch (error) {
                 setError(error);
             } finally {
