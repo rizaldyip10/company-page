@@ -19,10 +19,6 @@ const routes = [
   {
       label: 'Services',
       href: '/services'
-  },
-  {
-      label: 'Contact Us',
-      href: '/contact'
   }
 ]
 

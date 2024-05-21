@@ -26,7 +26,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
   return (
     <div className='w-[300px] h-[400px] xl:w-96 xl:h-[532px] flex relative justify-center group'>
       <div className='w-4/5 flex flex-col items-center justify-center absolute bg-white bottom-0 mb-5 p-5 z-30'>
-        <h1 className='font-semibold text-2xl'>{profile.name}</h1>
+        <h1 className='font-semibold text-2xl text-center'>{profile.name}</h1>
         <p className='text-[#7D7D7D]'>{profile.position}</p>
       </div>
       <div className='w-full h-full flex justify-center items-center bg-[#6b77e5c0] opacity-0 absolute hover:opacity-100 transition-opacity duration-300'>
@@ -46,7 +46,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
           ))
         }
       </div>
-      <Image alt='member' src={profile.photoURL} width={300} height={400} className='w-[300px] h-[400px] xl:w-96 xl:h-[532px] object-cover' quality={100} priority/>
+      <Image alt='member' src={profile.photoURL} width={300} height={400} className='w-[300px] h-[400px] xl:w-96 xl:h-[532px] object-cover' quality={100} />
     </div>
   )
 }

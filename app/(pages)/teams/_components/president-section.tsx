@@ -9,7 +9,7 @@ const PresidentSection = () => {
         <div className='flex flex-col gap-10'>
             <div className='w-full flex flex-col gap-2 items-center'>
                 <SectionTitle title='Whitecollar Leader' />
-                <h1 className='font-semibold text-4xl'>A Word From Our CEO</h1>
+                <h1 className='font-semibold text-4xl text-center'>A Word From Our CEO</h1>
             </div>
             <div className='w-full flex flex-col lg:flex-row gap-10 items-center lg:items-start'>
                 <Image alt='president' src={presidentImage} priority className='w-[300px] h-[400px] md:w-[400px] md:h-[600px] object-cover' />

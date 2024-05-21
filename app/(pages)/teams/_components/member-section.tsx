@@ -15,7 +15,7 @@ const MemberSection = () => {
             <div className='w-full flex flex-col items-center gap-12'>
                 <div className='w-full flex flex-col items-center'>
                     <SectionTitle title='Our Team' />
-                    <h1 className='font-semibold text-4xl'>Meet the Experts</h1>
+                    <h1 className='font-semibold text-4xl text-center'>Meet the Experts</h1>
                 </div>
                 <div className='w-full flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-5'>
                     {
