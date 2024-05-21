@@ -8,8 +8,6 @@ import React from 'react'
 
 const MemberSection = () => {
     const { teamList, loading, error } = useFetchTeams()
-    console.log(teamList);
-    
     return (
         <div className='w-full flex justify-center items-center py-16'>
             <div className='w-full flex flex-col items-center gap-12'>
